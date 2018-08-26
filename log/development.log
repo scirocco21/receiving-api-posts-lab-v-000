@@ -2812,3 +2812,78 @@ Processing by ProductsController#show as JSON
   [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?  [["order_id", 36]]
   [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?[0m  [["order_id", 39]]
 Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/44" for 104.162.56.59 at 2018-08-26 22:40:57 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 44]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/44" for 104.162.56.59 at 2018-08-26 22:40:58 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 44]]
+  Rendered products/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/45.json" for 104.162.56.59 at 2018-08-26 22:41:00 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 45]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=45):
+  app/controllers/products_controller.rb:26:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (41.4ms)
+
+
+Started GET "/products/44" for 104.162.56.59 at 2018-08-26 22:41:06 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 44]]
+  Rendered products/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/41" for 104.162.56.59 at 2018-08-26 22:41:12 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 41]]
+  Rendered products/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/42.json" for 104.162.56.59 at 2018-08-26 22:41:16 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 42]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?  [["product_id", 42]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?[0m  [["order_id", 33]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?  [["order_id", 38]]
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/43.json" for 104.162.56.59 at 2018-08-26 22:41:17 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 43]]
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?  [["product_id", 43]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?[0m  [["order_id", 36]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" INNER JOIN "ordered_products" ON "products"."id" = "ordered_products"."product_id" WHERE "ordered_products"."order_id" = ?  [["order_id", 39]]
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.6ms)
