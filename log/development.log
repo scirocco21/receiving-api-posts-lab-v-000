@@ -1707,3 +1707,56 @@ Started GET "/products/new" for 104.162.56.59 at 2018-08-26 21:59:54 +0000
 Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (374.4ms)
+Completed 200 OK in 1060ms (Views: 1045.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/store_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/store_admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 104.162.56.59 at 2018-08-26 21:59:55 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/products" for 104.162.56.59 at 2018-08-26 22:00:10 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/QPNlsYwWy6xU+uBQig8Up+6nohOGPOR8WO8B8laBEum4nf1zjwWSO9XSR190ybTTPwjD93nRPFm/AQw/YSU2Q==", "product"=>{"name"=>"Trainers", "price"=>"5", "description"=>"Fancy shoes", "inventory"=>"10"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Trainers"], ["description", "Fancy shoes"], ["inventory", 10], ["price", 5], ["created_at", "2018-08-26 22:00:10.425835"], ["updated_at", "2018-08-26 22:00:10.425835"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://67.205.188.72:51886/products
+Completed 302 Found in 13ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/products" for 104.162.56.59 at 2018-08-26 22:00:10 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as */*
