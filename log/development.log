@@ -1815,3 +1815,10 @@ Processing by ProductsController#index as */*
   [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
   Rendered products/index.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 104.162.56.59 at 2018-08-26 22:14:08 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 0.9ms)
