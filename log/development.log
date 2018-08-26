@@ -1822,3 +1822,14 @@ Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products" for 104.162.56.59 at 2018-08-26 22:14:14 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cIAWIkkNx/SPMlT7jJ9fEPYoTyCDFA4tugS1A0eD6nArYaxBQQGKktE29mezZEWRJW7ypxDruU0tmw00c1164g==", "product"=>{"name"=>"Trainers", "price"=>"5", "description"=>"fggfh", "inventory"=>"10"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Trainers"], ["description", "fggfh"], ["inventory", 10], ["price", 5], ["created_at", "2018-08-26 22:14:14.139708"], ["updated_at", "2018-08-26 22:14:14.139708"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 25]]
+Completed 201 Created in 64ms (Views: 56.9ms | ActiveRecord: 4.4ms)
