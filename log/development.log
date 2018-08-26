@@ -2358,3 +2358,17 @@ Completed 200 OK in 100ms (Views: 55.2ms | ActiveRecord: 1.4ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "ordered_products" ("order_id", "product_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["order_id", 40], ["product_id", 38], ["created_at", "2018-08-26 22:26:08.882756"], ["updated_at", "2018-08-26 22:26:08.882756"]]
   [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 104.162.56.59 at 2018-08-26 22:31:04 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 36ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 104.162.56.59 at 2018-08-26 22:31:10 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (371.3ms)
