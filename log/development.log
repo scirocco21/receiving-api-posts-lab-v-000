@@ -1763,3 +1763,29 @@ Processing by ProductsController#index as */*
   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
   Rendered products/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 104.162.56.59 at 2018-08-26 22:00:21 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 104.162.56.59 at 2018-08-26 22:00:27 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/HxGzPnSVJ/r3dNizAv2CC4imQ7D3AJsiAHGkZ8TrMMEEt4O+sENCGr1dG0yzVZ8/4346jwx2klv78tcqLeIQ==", "product"=>{"name"=>"Trainers", "price"=>"5", "description"=>"fdfgdf", "inventory"=>"10"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Trainers"], ["description", "fdfgdf"], ["inventory", 10], ["price", 5], ["created_at", "2018-08-26 22:00:27.435077"], ["updated_at", "2018-08-26 22:00:27.435077"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://67.205.188.72:51886/products
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/products" for 104.162.56.59 at 2018-08-26 22:00:27 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as */*
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
