@@ -14,7 +14,7 @@ $(function () {
       $(".productDescription").text(data["product"]["description"]);
       $(".productInventory").text(data["product"]["inventory"]);
       // re-set the id to current on the link
-      $(".js-next").attr("data-id", product["id"]);
+      $(".js-next").attr("data-id", data["product"]["id"]);
     });return false;
   });
 });
