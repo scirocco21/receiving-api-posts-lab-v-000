@@ -26,7 +26,7 @@
       posting.done(function(data) {
         $("#productName").text(data["product"]["title"]);
         $("#productPrice").text(data["product"]["price"]);
-        $("#productInventory").text(data["product"]["price"]);
+        $("#productInventory").text(data["product"]["inventory"]);
         $("#productDescription").text(data["product"]["description"]);
       });
     });
