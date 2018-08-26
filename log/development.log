@@ -2372,3 +2372,26 @@ Started GET "/products/new" for 104.162.56.59 at 2018-08-26 22:31:10 +0000
 Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (371.3ms)
+Completed 200 OK in 909ms (Views: 893.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 104.162.56.59 at 2018-08-26 22:31:11 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 104.162.56.59 at 2018-08-26 22:31:11 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 104.162.56.59 at 2018-08-26 22:31:11 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/products" for 104.162.56.59 at 2018-08-26 22:31:17 +0000
+Cannot render console from 104.162.56.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mznRs4L+wkfNaWLbkt3ePu9aOpASzbFfH942lW6I0f/A2GvQivKPIZNtwEetJsS/PByHF4EyBj+IQY6iWlZBbQ==", "product"=>{"name"=>"Headphones", "price"=>"5", "description"=>"dfggfgh", "inventory"=>"5"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Headphones"], ["description", "dfggfgh"], ["inventory", 5], ["price", 5], ["created_at", "2018-08-26 22:31:17.962463"], ["updated_at", "2018-08-26 22:31:17.962463"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 44]]
